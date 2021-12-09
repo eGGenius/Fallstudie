@@ -1,0 +1,19 @@
+[{
+    "old_path": "resources/js/base/fbplugins/AttachmentsPlugins/AttachmentUpload.js",
+    "new_path": "resources/js/base/fbplugins/AttachmentsPlugins/AttachmentUpload.js",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "diff": "@@ -810,7 +810,7 @@ Ext.namespace( 'CP.ux.fbPlugin.AttachmentsPlugin' );\n                 saveButton.setText( _( 'CP.upload' ) );\n             }\n             else {\n-                if ( this.type == 'File' ) {\n+                if ( this.ciId.toLowerCase().indexOf( 'new' ) === -1 \u0026\u0026 this.type === 'File' ) {\n                     fileName  = this.originalName;\n                     extension = this.extension;\n                 }\n"
+}, {
+    "old_path": "resources/js/cockpit/fbplugins/DocumentManagementObjects/DocumentUpload.js",
+    "new_path": "resources/js/cockpit/fbplugins/DocumentManagementObjects/DocumentUpload.js",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "diff": "@@ -813,7 +813,7 @@ Ext.namespace( 'CP.ux.fbPlugin.DocumentManagement' );\n                 saveButton.setText( _( 'CP.upload' ) );\n             }\n             else {\n-                if ( this.type == 'File' ) {\n+                if ( this.ciId.toLowerCase().indexOf( 'new' ) === -1 \u0026\u0026 this.type === 'File' ) {\n                     fileName  = this.originalName;\n                     extension = this.extension;\n                 }\n"
+}]
